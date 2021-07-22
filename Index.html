@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link href="Index.css" type="text/css" rel="stylesheet">
+  <title>Dota Plus Plus</title>
+  <h1>Dota Plus Plus</h1>
+</head>
+<body>
+		<div class="container">
+				<form name='formOne' action="signIn.php" onsubmit = "return validation()" method="post" >
+				<label for="uEmail"><b>Email Address:</b></label>
+				<input type="email" placeholder="Enter Email Address" name="userEmail" id="userEmail" required>
+				<label for="uPass"><b>Password:</b></label>
+				<input type="password" placeholder="Enter Password" name="userPass" id="userPass" required>
+				<label>
+				<button type="submit" id="btn" value = "Login">Login</button>
+				<label>
+				</form>
+		</div>
+		<div>
+			<small><a href="signUp.html">New User? Sign Up here!</a></small>
+		</div>
+		<div>
+			<small><a href="FAQ.html">New to Dota? Resources here</a></small>
+		</div>
+
+</body>
+</html>

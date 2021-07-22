@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>    
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+    </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link href="Index.css" type="text/css" rel="stylesheet">
+  <title>Dota Plus Plus</title>
+  <h1>Dota Item FAQ</h1>
+</head>
+</head>
+<body>
+    <button class="accordion">Why does every hero buy boots?</button>
+    <div class="panel">
+      <p>Boots are usually bought by every hero in the game at one point or another, and are bought because of the movespeed advantage they give, without them you are at a severe disadvantage to players who have bought them</p>
+    </div>
+    
+    <button class="accordion">Why are certain heros buying wards when others arnt?</button>
+    <div class="panel">
+      <p>Wards and other support items are ususally bought by the support heros on a given team, these heros also buy items which focus on assisting allies rather than increasing there own strength</p>
+    </div>
+    
+    <button class="accordion">Where can I buy items in Dota2?</button>
+    <div class="panel">
+      <p>Items can be bought in your teams fountain(Or respawn), if you are not in the fountain you can still purchase items but they are kept at the base until you collect them, unless you use an animal courier to have them delivered to you out on the map, but beware these couriers can be killed meaning you will have to wait for them to respawn before you can reviece your items</p>
+    </div>
+
+    <button class="accordion">Why cant I buy X item?</button>
+    <div class="panel">
+      <p>Some items can only be purchased after a certain timestamp in the game (for example aghanims shard at 20mins), others must be purchased from the secret shop, there is one located on either side of the river in the middle of the map.</p>
+    </div>
+
+    <button class="accordion">Why is having multipul of certain items bad?</button>
+    <div class="panel">
+      <p>Some items give your team powerful auras, these auras can provide benefits for your team, but having multipul players pick up these items is seen as inefficient as there buffs never stack, meaning in high level play it is rare to see those items multipul times on a given team</p>
+    </div>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <small><a href="Index.html">Sign in here!</a></small>
+<script>
+var accord = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < accord.length; i++) {
+  accord[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var accordPanel = this.nextElementSibling;
+    if (accordPanel.style.display === "block") {
+        accordPanel.style.display = "none";
+    } else {
+        accordPanel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
